@@ -1,0 +1,50 @@
+{
+  "type": "CarbonResponseGreedy",
+  "version": 1,
+  "lambda_profit": 4.0,
+  "cash_limit": false,
+  "emission_scale_t": 1.0,
+  "profit_scale_yuan": 1000.0,
+  "platform_share": 0.8,
+  "response_model": {
+    "type": "LearnedResponseGreedy",
+    "version": 1,
+    "response_features": [
+      "intercept",
+      "rebate_yuan_per_gpuh_div_0.1",
+      "additional_delay_hours_div_3",
+      "additional_migrated"
+    ],
+    "prior_weights": [
+      [
+        -2.3891977957918256,
+        7.507321974080895,
+        -0.44134147128511164,
+        0.9084587515206434
+      ],
+      [
+        -2.126321192001276,
+        4.211989116907505,
+        -2.8060932072967972,
+        -1.082040716332462
+      ],
+      [
+        -3.1282384071987126,
+        1.1601591811098824,
+        -1.9588247292056837,
+        -0.6855039726993756
+      ]
+    ],
+    "enable_history": true,
+    "l2": 1.0,
+    "history_l2": 1.0,
+    "max_iter": 200,
+    "sample_counts": [
+      368,
+      364,
+      351
+    ],
+    "fitting_data": "already-issued offers and public accepted bit only; no_offer excluded"
+  },
+  "carbon_metric": "current OPF total generator emissions minus candidate OPF total generator emissions"
+}

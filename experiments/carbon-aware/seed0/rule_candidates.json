@@ -1,0 +1,756 @@
+[
+  {
+    "index": 0,
+    "lambda_profit": 0.0,
+    "cash_limit": false,
+    "mean_platform_gain_yuan": 382.9626312552148,
+    "mean_grid_emissions_reduction_t": 7.301284214471611,
+    "mean_social_saving_yuan": 1231.2600513452694,
+    "controller": {
+      "type": "CarbonResponseGreedy",
+      "version": 1,
+      "lambda_profit": 0.0,
+      "cash_limit": false,
+      "emission_scale_t": 1.0,
+      "profit_scale_yuan": 1000.0,
+      "platform_share": 0.8,
+      "response_model": {
+        "type": "LearnedResponseGreedy",
+        "version": 1,
+        "response_features": [
+          "intercept",
+          "rebate_yuan_per_gpuh_div_0.1",
+          "additional_delay_hours_div_3",
+          "additional_migrated"
+        ],
+        "prior_weights": [
+          [
+            -2.3891977957918256,
+            7.507321974080895,
+            -0.44134147128511164,
+            0.9084587515206434
+          ],
+          [
+            -2.126321192001276,
+            4.211989116907505,
+            -2.8060932072967972,
+            -1.082040716332462
+          ],
+          [
+            -3.1282384071987126,
+            1.1601591811098824,
+            -1.9588247292056837,
+            -0.6855039726993756
+          ]
+        ],
+        "enable_history": true,
+        "l2": 1.0,
+        "history_l2": 1.0,
+        "max_iter": 200,
+        "sample_counts": [
+          368,
+          364,
+          351
+        ],
+        "fitting_data": "already-issued offers and public accepted bit only; no_offer excluded"
+      },
+      "carbon_metric": "current OPF total generator emissions minus candidate OPF total generator emissions"
+    }
+  },
+  {
+    "index": 1,
+    "lambda_profit": 0.125,
+    "cash_limit": false,
+    "mean_platform_gain_yuan": 2491.874230674311,
+    "mean_grid_emissions_reduction_t": 4.6815006011159195,
+    "mean_social_saving_yuan": 4448.019408589688,
+    "controller": {
+      "type": "CarbonResponseGreedy",
+      "version": 1,
+      "lambda_profit": 0.125,
+      "cash_limit": false,
+      "emission_scale_t": 1.0,
+      "profit_scale_yuan": 1000.0,
+      "platform_share": 0.8,
+      "response_model": {
+        "type": "LearnedResponseGreedy",
+        "version": 1,
+        "response_features": [
+          "intercept",
+          "rebate_yuan_per_gpuh_div_0.1",
+          "additional_delay_hours_div_3",
+          "additional_migrated"
+        ],
+        "prior_weights": [
+          [
+            -2.3891977957918256,
+            7.507321974080895,
+            -0.44134147128511164,
+            0.9084587515206434
+          ],
+          [
+            -2.126321192001276,
+            4.211989116907505,
+            -2.8060932072967972,
+            -1.082040716332462
+          ],
+          [
+            -3.1282384071987126,
+            1.1601591811098824,
+            -1.9588247292056837,
+            -0.6855039726993756
+          ]
+        ],
+        "enable_history": true,
+        "l2": 1.0,
+        "history_l2": 1.0,
+        "max_iter": 200,
+        "sample_counts": [
+          368,
+          364,
+          351
+        ],
+        "fitting_data": "already-issued offers and public accepted bit only; no_offer excluded"
+      },
+      "carbon_metric": "current OPF total generator emissions minus candidate OPF total generator emissions"
+    }
+  },
+  {
+    "index": 2,
+    "lambda_profit": 0.25,
+    "cash_limit": false,
+    "mean_platform_gain_yuan": 2502.4861837953463,
+    "mean_grid_emissions_reduction_t": 4.680114564403894,
+    "mean_social_saving_yuan": 4463.240455648756,
+    "controller": {
+      "type": "CarbonResponseGreedy",
+      "version": 1,
+      "lambda_profit": 0.25,
+      "cash_limit": false,
+      "emission_scale_t": 1.0,
+      "profit_scale_yuan": 1000.0,
+      "platform_share": 0.8,
+      "response_model": {
+        "type": "LearnedResponseGreedy",
+        "version": 1,
+        "response_features": [
+          "intercept",
+          "rebate_yuan_per_gpuh_div_0.1",
+          "additional_delay_hours_div_3",
+          "additional_migrated"
+        ],
+        "prior_weights": [
+          [
+            -2.3891977957918256,
+            7.507321974080895,
+            -0.44134147128511164,
+            0.9084587515206434
+          ],
+          [
+            -2.126321192001276,
+            4.211989116907505,
+            -2.8060932072967972,
+            -1.082040716332462
+          ],
+          [
+            -3.1282384071987126,
+            1.1601591811098824,
+            -1.9588247292056837,
+            -0.6855039726993756
+          ]
+        ],
+        "enable_history": true,
+        "l2": 1.0,
+        "history_l2": 1.0,
+        "max_iter": 200,
+        "sample_counts": [
+          368,
+          364,
+          351
+        ],
+        "fitting_data": "already-issued offers and public accepted bit only; no_offer excluded"
+      },
+      "carbon_metric": "current OPF total generator emissions minus candidate OPF total generator emissions"
+    }
+  },
+  {
+    "index": 3,
+    "lambda_profit": 0.5,
+    "cash_limit": false,
+    "mean_platform_gain_yuan": 2559.3824429789574,
+    "mean_grid_emissions_reduction_t": 4.668793720155707,
+    "mean_social_saving_yuan": 4509.5111711773625,
+    "controller": {
+      "type": "CarbonResponseGreedy",
+      "version": 1,
+      "lambda_profit": 0.5,
+      "cash_limit": false,
+      "emission_scale_t": 1.0,
+      "profit_scale_yuan": 1000.0,
+      "platform_share": 0.8,
+      "response_model": {
+        "type": "LearnedResponseGreedy",
+        "version": 1,
+        "response_features": [
+          "intercept",
+          "rebate_yuan_per_gpuh_div_0.1",
+          "additional_delay_hours_div_3",
+          "additional_migrated"
+        ],
+        "prior_weights": [
+          [
+            -2.3891977957918256,
+            7.507321974080895,
+            -0.44134147128511164,
+            0.9084587515206434
+          ],
+          [
+            -2.126321192001276,
+            4.211989116907505,
+            -2.8060932072967972,
+            -1.082040716332462
+          ],
+          [
+            -3.1282384071987126,
+            1.1601591811098824,
+            -1.9588247292056837,
+            -0.6855039726993756
+          ]
+        ],
+        "enable_history": true,
+        "l2": 1.0,
+        "history_l2": 1.0,
+        "max_iter": 200,
+        "sample_counts": [
+          368,
+          364,
+          351
+        ],
+        "fitting_data": "already-issued offers and public accepted bit only; no_offer excluded"
+      },
+      "carbon_metric": "current OPF total generator emissions minus candidate OPF total generator emissions"
+    }
+  },
+  {
+    "index": 4,
+    "lambda_profit": 1.0,
+    "cash_limit": false,
+    "mean_platform_gain_yuan": 2698.1102778615195,
+    "mean_grid_emissions_reduction_t": 4.562476984085517,
+    "mean_social_saving_yuan": 4707.945083675229,
+    "controller": {
+      "type": "CarbonResponseGreedy",
+      "version": 1,
+      "lambda_profit": 1.0,
+      "cash_limit": false,
+      "emission_scale_t": 1.0,
+      "profit_scale_yuan": 1000.0,
+      "platform_share": 0.8,
+      "response_model": {
+        "type": "LearnedResponseGreedy",
+        "version": 1,
+        "response_features": [
+          "intercept",
+          "rebate_yuan_per_gpuh_div_0.1",
+          "additional_delay_hours_div_3",
+          "additional_migrated"
+        ],
+        "prior_weights": [
+          [
+            -2.3891977957918256,
+            7.507321974080895,
+            -0.44134147128511164,
+            0.9084587515206434
+          ],
+          [
+            -2.126321192001276,
+            4.211989116907505,
+            -2.8060932072967972,
+            -1.082040716332462
+          ],
+          [
+            -3.1282384071987126,
+            1.1601591811098824,
+            -1.9588247292056837,
+            -0.6855039726993756
+          ]
+        ],
+        "enable_history": true,
+        "l2": 1.0,
+        "history_l2": 1.0,
+        "max_iter": 200,
+        "sample_counts": [
+          368,
+          364,
+          351
+        ],
+        "fitting_data": "already-issued offers and public accepted bit only; no_offer excluded"
+      },
+      "carbon_metric": "current OPF total generator emissions minus candidate OPF total generator emissions"
+    }
+  },
+  {
+    "index": 5,
+    "lambda_profit": 2.0,
+    "cash_limit": false,
+    "mean_platform_gain_yuan": 3853.396853091762,
+    "mean_grid_emissions_reduction_t": 2.7383928071037635,
+    "mean_social_saving_yuan": 6310.2872695380565,
+    "controller": {
+      "type": "CarbonResponseGreedy",
+      "version": 1,
+      "lambda_profit": 2.0,
+      "cash_limit": false,
+      "emission_scale_t": 1.0,
+      "profit_scale_yuan": 1000.0,
+      "platform_share": 0.8,
+      "response_model": {
+        "type": "LearnedResponseGreedy",
+        "version": 1,
+        "response_features": [
+          "intercept",
+          "rebate_yuan_per_gpuh_div_0.1",
+          "additional_delay_hours_div_3",
+          "additional_migrated"
+        ],
+        "prior_weights": [
+          [
+            -2.3891977957918256,
+            7.507321974080895,
+            -0.44134147128511164,
+            0.9084587515206434
+          ],
+          [
+            -2.126321192001276,
+            4.211989116907505,
+            -2.8060932072967972,
+            -1.082040716332462
+          ],
+          [
+            -3.1282384071987126,
+            1.1601591811098824,
+            -1.9588247292056837,
+            -0.6855039726993756
+          ]
+        ],
+        "enable_history": true,
+        "l2": 1.0,
+        "history_l2": 1.0,
+        "max_iter": 200,
+        "sample_counts": [
+          368,
+          364,
+          351
+        ],
+        "fitting_data": "already-issued offers and public accepted bit only; no_offer excluded"
+      },
+      "carbon_metric": "current OPF total generator emissions minus candidate OPF total generator emissions"
+    }
+  },
+  {
+    "index": 6,
+    "lambda_profit": 4.0,
+    "cash_limit": false,
+    "mean_platform_gain_yuan": 4074.259498635307,
+    "mean_grid_emissions_reduction_t": 2.1005180353723207,
+    "mean_social_saving_yuan": 6545.831371225995,
+    "controller": {
+      "type": "CarbonResponseGreedy",
+      "version": 1,
+      "lambda_profit": 4.0,
+      "cash_limit": false,
+      "emission_scale_t": 1.0,
+      "profit_scale_yuan": 1000.0,
+      "platform_share": 0.8,
+      "response_model": {
+        "type": "LearnedResponseGreedy",
+        "version": 1,
+        "response_features": [
+          "intercept",
+          "rebate_yuan_per_gpuh_div_0.1",
+          "additional_delay_hours_div_3",
+          "additional_migrated"
+        ],
+        "prior_weights": [
+          [
+            -2.3891977957918256,
+            7.507321974080895,
+            -0.44134147128511164,
+            0.9084587515206434
+          ],
+          [
+            -2.126321192001276,
+            4.211989116907505,
+            -2.8060932072967972,
+            -1.082040716332462
+          ],
+          [
+            -3.1282384071987126,
+            1.1601591811098824,
+            -1.9588247292056837,
+            -0.6855039726993756
+          ]
+        ],
+        "enable_history": true,
+        "l2": 1.0,
+        "history_l2": 1.0,
+        "max_iter": 200,
+        "sample_counts": [
+          368,
+          364,
+          351
+        ],
+        "fitting_data": "already-issued offers and public accepted bit only; no_offer excluded"
+      },
+      "carbon_metric": "current OPF total generator emissions minus candidate OPF total generator emissions"
+    }
+  },
+  {
+    "index": 7,
+    "lambda_profit": 8.0,
+    "cash_limit": false,
+    "mean_platform_gain_yuan": 4005.050601575253,
+    "mean_grid_emissions_reduction_t": 2.039658181174928,
+    "mean_social_saving_yuan": 6538.1565808029845,
+    "controller": {
+      "type": "CarbonResponseGreedy",
+      "version": 1,
+      "lambda_profit": 8.0,
+      "cash_limit": false,
+      "emission_scale_t": 1.0,
+      "profit_scale_yuan": 1000.0,
+      "platform_share": 0.8,
+      "response_model": {
+        "type": "LearnedResponseGreedy",
+        "version": 1,
+        "response_features": [
+          "intercept",
+          "rebate_yuan_per_gpuh_div_0.1",
+          "additional_delay_hours_div_3",
+          "additional_migrated"
+        ],
+        "prior_weights": [
+          [
+            -2.3891977957918256,
+            7.507321974080895,
+            -0.44134147128511164,
+            0.9084587515206434
+          ],
+          [
+            -2.126321192001276,
+            4.211989116907505,
+            -2.8060932072967972,
+            -1.082040716332462
+          ],
+          [
+            -3.1282384071987126,
+            1.1601591811098824,
+            -1.9588247292056837,
+            -0.6855039726993756
+          ]
+        ],
+        "enable_history": true,
+        "l2": 1.0,
+        "history_l2": 1.0,
+        "max_iter": 200,
+        "sample_counts": [
+          368,
+          364,
+          351
+        ],
+        "fitting_data": "already-issued offers and public accepted bit only; no_offer excluded"
+      },
+      "carbon_metric": "current OPF total generator emissions minus candidate OPF total generator emissions"
+    }
+  },
+  {
+    "index": 8,
+    "lambda_profit": 16.0,
+    "cash_limit": false,
+    "mean_platform_gain_yuan": 4022.0120181225825,
+    "mean_grid_emissions_reduction_t": 2.0119151467999283,
+    "mean_social_saving_yuan": 6549.745827308775,
+    "controller": {
+      "type": "CarbonResponseGreedy",
+      "version": 1,
+      "lambda_profit": 16.0,
+      "cash_limit": false,
+      "emission_scale_t": 1.0,
+      "profit_scale_yuan": 1000.0,
+      "platform_share": 0.8,
+      "response_model": {
+        "type": "LearnedResponseGreedy",
+        "version": 1,
+        "response_features": [
+          "intercept",
+          "rebate_yuan_per_gpuh_div_0.1",
+          "additional_delay_hours_div_3",
+          "additional_migrated"
+        ],
+        "prior_weights": [
+          [
+            -2.3891977957918256,
+            7.507321974080895,
+            -0.44134147128511164,
+            0.9084587515206434
+          ],
+          [
+            -2.126321192001276,
+            4.211989116907505,
+            -2.8060932072967972,
+            -1.082040716332462
+          ],
+          [
+            -3.1282384071987126,
+            1.1601591811098824,
+            -1.9588247292056837,
+            -0.6855039726993756
+          ]
+        ],
+        "enable_history": true,
+        "l2": 1.0,
+        "history_l2": 1.0,
+        "max_iter": 200,
+        "sample_counts": [
+          368,
+          364,
+          351
+        ],
+        "fitting_data": "already-issued offers and public accepted bit only; no_offer excluded"
+      },
+      "carbon_metric": "current OPF total generator emissions minus candidate OPF total generator emissions"
+    }
+  },
+  {
+    "index": 9,
+    "lambda_profit": 32.0,
+    "cash_limit": false,
+    "mean_platform_gain_yuan": 4047.208202651732,
+    "mean_grid_emissions_reduction_t": 1.9823054122125834,
+    "mean_social_saving_yuan": 6552.722327826228,
+    "controller": {
+      "type": "CarbonResponseGreedy",
+      "version": 1,
+      "lambda_profit": 32.0,
+      "cash_limit": false,
+      "emission_scale_t": 1.0,
+      "profit_scale_yuan": 1000.0,
+      "platform_share": 0.8,
+      "response_model": {
+        "type": "LearnedResponseGreedy",
+        "version": 1,
+        "response_features": [
+          "intercept",
+          "rebate_yuan_per_gpuh_div_0.1",
+          "additional_delay_hours_div_3",
+          "additional_migrated"
+        ],
+        "prior_weights": [
+          [
+            -2.3891977957918256,
+            7.507321974080895,
+            -0.44134147128511164,
+            0.9084587515206434
+          ],
+          [
+            -2.126321192001276,
+            4.211989116907505,
+            -2.8060932072967972,
+            -1.082040716332462
+          ],
+          [
+            -3.1282384071987126,
+            1.1601591811098824,
+            -1.9588247292056837,
+            -0.6855039726993756
+          ]
+        ],
+        "enable_history": true,
+        "l2": 1.0,
+        "history_l2": 1.0,
+        "max_iter": 200,
+        "sample_counts": [
+          368,
+          364,
+          351
+        ],
+        "fitting_data": "already-issued offers and public accepted bit only; no_offer excluded"
+      },
+      "carbon_metric": "current OPF total generator emissions minus candidate OPF total generator emissions"
+    }
+  },
+  {
+    "index": 10,
+    "lambda_profit": 64.0,
+    "cash_limit": false,
+    "mean_platform_gain_yuan": 4041.1695921917285,
+    "mean_grid_emissions_reduction_t": 1.7730827816493302,
+    "mean_social_saving_yuan": 6502.869086482581,
+    "controller": {
+      "type": "CarbonResponseGreedy",
+      "version": 1,
+      "lambda_profit": 64.0,
+      "cash_limit": false,
+      "emission_scale_t": 1.0,
+      "profit_scale_yuan": 1000.0,
+      "platform_share": 0.8,
+      "response_model": {
+        "type": "LearnedResponseGreedy",
+        "version": 1,
+        "response_features": [
+          "intercept",
+          "rebate_yuan_per_gpuh_div_0.1",
+          "additional_delay_hours_div_3",
+          "additional_migrated"
+        ],
+        "prior_weights": [
+          [
+            -2.3891977957918256,
+            7.507321974080895,
+            -0.44134147128511164,
+            0.9084587515206434
+          ],
+          [
+            -2.126321192001276,
+            4.211989116907505,
+            -2.8060932072967972,
+            -1.082040716332462
+          ],
+          [
+            -3.1282384071987126,
+            1.1601591811098824,
+            -1.9588247292056837,
+            -0.6855039726993756
+          ]
+        ],
+        "enable_history": true,
+        "l2": 1.0,
+        "history_l2": 1.0,
+        "max_iter": 200,
+        "sample_counts": [
+          368,
+          364,
+          351
+        ],
+        "fitting_data": "already-issued offers and public accepted bit only; no_offer excluded"
+      },
+      "carbon_metric": "current OPF total generator emissions minus candidate OPF total generator emissions"
+    }
+  },
+  {
+    "index": 11,
+    "lambda_profit": 256.0,
+    "cash_limit": false,
+    "mean_platform_gain_yuan": 4000.756594218545,
+    "mean_grid_emissions_reduction_t": 1.635267201893531,
+    "mean_social_saving_yuan": 6441.012312583783,
+    "controller": {
+      "type": "CarbonResponseGreedy",
+      "version": 1,
+      "lambda_profit": 256.0,
+      "cash_limit": false,
+      "emission_scale_t": 1.0,
+      "profit_scale_yuan": 1000.0,
+      "platform_share": 0.8,
+      "response_model": {
+        "type": "LearnedResponseGreedy",
+        "version": 1,
+        "response_features": [
+          "intercept",
+          "rebate_yuan_per_gpuh_div_0.1",
+          "additional_delay_hours_div_3",
+          "additional_migrated"
+        ],
+        "prior_weights": [
+          [
+            -2.3891977957918256,
+            7.507321974080895,
+            -0.44134147128511164,
+            0.9084587515206434
+          ],
+          [
+            -2.126321192001276,
+            4.211989116907505,
+            -2.8060932072967972,
+            -1.082040716332462
+          ],
+          [
+            -3.1282384071987126,
+            1.1601591811098824,
+            -1.9588247292056837,
+            -0.6855039726993756
+          ]
+        ],
+        "enable_history": true,
+        "l2": 1.0,
+        "history_l2": 1.0,
+        "max_iter": 200,
+        "sample_counts": [
+          368,
+          364,
+          351
+        ],
+        "fitting_data": "already-issued offers and public accepted bit only; no_offer excluded"
+      },
+      "carbon_metric": "current OPF total generator emissions minus candidate OPF total generator emissions"
+    }
+  },
+  {
+    "index": 12,
+    "lambda_profit": null,
+    "cash_limit": true,
+    "mean_platform_gain_yuan": 4000.756594218545,
+    "mean_grid_emissions_reduction_t": 1.635267201893531,
+    "mean_social_saving_yuan": 6441.012312583783,
+    "controller": {
+      "type": "CarbonResponseGreedy",
+      "version": 1,
+      "lambda_profit": null,
+      "cash_limit": true,
+      "emission_scale_t": 1.0,
+      "profit_scale_yuan": 1000.0,
+      "platform_share": 0.8,
+      "response_model": {
+        "type": "LearnedResponseGreedy",
+        "version": 1,
+        "response_features": [
+          "intercept",
+          "rebate_yuan_per_gpuh_div_0.1",
+          "additional_delay_hours_div_3",
+          "additional_migrated"
+        ],
+        "prior_weights": [
+          [
+            -2.3891977957918256,
+            7.507321974080895,
+            -0.44134147128511164,
+            0.9084587515206434
+          ],
+          [
+            -2.126321192001276,
+            4.211989116907505,
+            -2.8060932072967972,
+            -1.082040716332462
+          ],
+          [
+            -3.1282384071987126,
+            1.1601591811098824,
+            -1.9588247292056837,
+            -0.6855039726993756
+          ]
+        ],
+        "enable_history": true,
+        "l2": 1.0,
+        "history_l2": 1.0,
+        "max_iter": 200,
+        "sample_counts": [
+          368,
+          364,
+          351
+        ],
+        "fitting_data": "already-issued offers and public accepted bit only; no_offer excluded"
+      },
+      "carbon_metric": "current OPF total generator emissions minus candidate OPF total generator emissions"
+    }
+  }
+]

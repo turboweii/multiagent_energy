@@ -1,0 +1,17 @@
+{
+  "root_seed": 0,
+  "method": "cash",
+  "actual_additional_actor_steps": 49152,
+  "optimizer_steps": 1152,
+  "requested_actor_steps": 49152,
+  "rollout_steps": 256,
+  "batch_size": 256,
+  "n_epochs": 6,
+  "target_kl": 0.02,
+  "entropy_coefficient": 0.005,
+  "wall_seconds": 679.6718566250056,
+  "fixed_users": true,
+  "source_platform": "/Users/turbo/Desktop/multiagent_energy/seed0/full-history/best_joint/platform.zip",
+  "source_platform_steps": 114688,
+  "warm_start": null
+}

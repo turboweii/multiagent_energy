@@ -1,0 +1,184 @@
+{
+  "status": "complete",
+  "split": "TRAIN",
+  "evaluation_scope": "ALL_TRAIN",
+  "root_seed": 0,
+  "users": "matched original best_joint users",
+  "cases_per_method": 2048,
+  "reference_source": "experiments/carbon-aware/seed0/reference.json",
+  "reference_days_source": "experiments/carbon-aware/seed0/reference_train_days.csv",
+  "reference_profit_yuan": 4398.054106244956,
+  "profit_fraction": 0.95,
+  "required_profit_yuan": 4178.1514009327075,
+  "qualification_tolerance_yuan": 1e-06,
+  "original_subset_selection": {
+    "source": "experiments/carbon-aware/seed0/rule_selection.json",
+    "cases": 128,
+    "feasible": false,
+    "profit_shortfall_yuan": 103.89190229740052,
+    "selected_index": 6,
+    "selected_lambda_profit": 4.0,
+    "flag_preserved": true
+  },
+  "results": [
+    {
+      "method": "carbon_rule_lambda_4",
+      "controller": {
+        "type": "CarbonResponseGreedy",
+        "version": 1,
+        "lambda_profit": 4.0,
+        "cash_limit": false,
+        "emission_scale_t": 1.0,
+        "profit_scale_yuan": 1000.0,
+        "platform_share": 0.8,
+        "response_model": {
+          "type": "LearnedResponseGreedy",
+          "version": 1,
+          "response_features": [
+            "intercept",
+            "rebate_yuan_per_gpuh_div_0.1",
+            "additional_delay_hours_div_3",
+            "additional_migrated"
+          ],
+          "prior_weights": [
+            [
+              -2.3891977957918256,
+              7.507321974080895,
+              -0.44134147128511164,
+              0.9084587515206434
+            ],
+            [
+              -2.126321192001276,
+              4.211989116907505,
+              -2.8060932072967972,
+              -1.082040716332462
+            ],
+            [
+              -3.1282384071987126,
+              1.1601591811098824,
+              -1.9588247292056837,
+              -0.6855039726993756
+            ]
+          ],
+          "enable_history": true,
+          "l2": 1.0,
+          "history_l2": 1.0,
+          "max_iter": 200,
+          "sample_counts": [
+            368,
+            364,
+            351
+          ],
+          "fitting_data": "already-issued offers and public accepted bit only; no_offer excluded"
+        },
+        "carbon_metric": "current OPF total generator emissions minus candidate OPF total generator emissions"
+      },
+      "cases": 2048,
+      "public_weather_days": 256,
+      "private_draws_per_day": 8,
+      "mean_platform_gain_yuan": 3941.6953706541913,
+      "mean_grid_emissions_t": 553.2119411526329,
+      "mean_grid_emissions_reduction_t": 2.2845374087677666,
+      "mean_social_saving_yuan": 6350.531307166278,
+      "mean_procurement_net_saving_yuan": 4927.119213317731,
+      "mean_dc_footprint_change_t": 2.880722037157763,
+      "mean_user_ir_rate": 1.0,
+      "mean_completion_rate": 1.0,
+      "required_profit_yuan": 4178.1514009327075,
+      "profit_gap_yuan": 236.4560302785162,
+      "profit_shortfall_yuan": 236.4560302785162,
+      "profit_qualified_full_train": false,
+      "retained_reference_profit_fraction": 0.8962362161614237
+    },
+    {
+      "method": "cash_limit",
+      "controller": {
+        "type": "CarbonResponseGreedy",
+        "version": 1,
+        "lambda_profit": null,
+        "cash_limit": true,
+        "emission_scale_t": 1.0,
+        "profit_scale_yuan": 1000.0,
+        "platform_share": 0.8,
+        "response_model": {
+          "type": "LearnedResponseGreedy",
+          "version": 1,
+          "response_features": [
+            "intercept",
+            "rebate_yuan_per_gpuh_div_0.1",
+            "additional_delay_hours_div_3",
+            "additional_migrated"
+          ],
+          "prior_weights": [
+            [
+              -2.3891977957918256,
+              7.507321974080895,
+              -0.44134147128511164,
+              0.9084587515206434
+            ],
+            [
+              -2.126321192001276,
+              4.211989116907505,
+              -2.8060932072967972,
+              -1.082040716332462
+            ],
+            [
+              -3.1282384071987126,
+              1.1601591811098824,
+              -1.9588247292056837,
+              -0.6855039726993756
+            ]
+          ],
+          "enable_history": true,
+          "l2": 1.0,
+          "history_l2": 1.0,
+          "max_iter": 200,
+          "sample_counts": [
+            368,
+            364,
+            351
+          ],
+          "fitting_data": "already-issued offers and public accepted bit only; no_offer excluded"
+        },
+        "carbon_metric": "current OPF total generator emissions minus candidate OPF total generator emissions"
+      },
+      "cases": 2048,
+      "public_weather_days": 256,
+      "private_draws_per_day": 8,
+      "mean_platform_gain_yuan": 3940.086785710004,
+      "mean_grid_emissions_t": 553.7563491649769,
+      "mean_grid_emissions_reduction_t": 1.7401293964238382,
+      "mean_social_saving_yuan": 6339.170822470702,
+      "mean_procurement_net_saving_yuan": 4925.1084821375,
+      "mean_dc_footprint_change_t": 3.1392506119274417,
+      "mean_user_ir_rate": 1.0,
+      "mean_completion_rate": 1.0,
+      "required_profit_yuan": 4178.1514009327075,
+      "profit_gap_yuan": 238.06461522270365,
+      "profit_shortfall_yuan": 238.06461522270365,
+      "profit_qualified_full_train": false,
+      "retained_reference_profit_fraction": 0.8958704669220264
+    }
+  ],
+  "test_cases_used": [],
+  "controller_reselected": false,
+  "original_input_sha256": {
+    "seed0/full-history/best_joint/platform.zip": "0a17f9408a9acf89ee6e71b953c46d47fef5187d95bcdd0253d11feecd85d9a1",
+    "seed0/baselines-initial/logit_online_map.json": "cb223183162436b470b6ce6262cda0679cbfe3b5d793ae056f9a365fac3ebaca",
+    "seed0/full-history/best_joint/user_1.zip": "b8a050ce7f36dab26c7e3a234f624c10461d43c91dec36a5cc7565f496be4afd",
+    "seed0/full-history/best_joint/user_0.zip": "82a075afd6b2338053905c3cd78d484f10491de75ba8ecd249885274b0c16ea1",
+    "seed0/full-history/best_joint/user_2.zip": "b952264313093fe56f437099d349c45be629ae77831c7be4f7a74740fa27e933",
+    "inputs/legacy-seed0/selection.json": "65bce936a49fc2335ddaead7063e8875712c1fb438b9e4124929e7c267044554",
+    "inputs/legacy-seed0/selected/platform.zip": "93e34de79c9d0420280e08a3bc657c56d44562b4ff3fc7d9a29e61638b33b482",
+    "inputs/legacy-seed0/selected/user_0.zip": "51e68d418d85ede81388e87f8df116e010f9f0d945df2636460fed54251959ca",
+    "inputs/legacy-seed0/selected/user_1.zip": "e030b37f07bfe4ad9e0488c0cf8b7b0c170ab8bfc5433bc482b6a110593b7a5e",
+    "inputs/legacy-seed0/selected/user_2.zip": "90d58442abc0c70c850ed39b737831d732b0a0174cbf029a516e803b3162e39e"
+  },
+  "original_source_files_sha256": {
+    "reference.json": "991dfd70c2c4dac2e9a68f65502c8cd300b17bca56a647699314316879df482b",
+    "rule_selection.json": "2552abbea769631157ebb6ea40bb5b1638225f9451ba02ba734393f3bd26d0c0",
+    "carbon_rule.json": "7c01190787662e8ed0494406ba05a2dc5b792175eb4c65517ce45ef3c83fba69",
+    "reference_train_days.csv": "f268250648a33c854c7196b93990a84d6bbfbedadd1932a685edcc51760bf18c"
+  },
+  "elapsed_seconds": 350.29724241700023
+}

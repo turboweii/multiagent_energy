@@ -1,0 +1,26 @@
+{
+  "coordination_tests": 607,
+  "result": "passed",
+  "warnings": 5,
+  "test_command": "python -m pytest -q tests/coordination (cwd=source)",
+  "integration_checks": {
+    "steps_each": 256,
+    "root_seed": 0,
+    "formal_training": false,
+    "learning_rates": [
+      0.0003,
+      5e-05
+    ],
+    "first_update_kl": [
+      0.52192902565,
+      0.02399185114
+    ]
+  },
+  "formal_training": {
+    "root_seed": 0,
+    "models_each_fixed_steps": 49152,
+    "joint_cycles": 1,
+    "joint_platform_steps": 8192,
+    "joint_user_steps_each": 4096
+  }
+}

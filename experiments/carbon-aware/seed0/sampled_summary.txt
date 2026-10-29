@@ -1,0 +1,43 @@
+冻结PPO的采样执行补充结果
+
+训练算法种子仍为0。每个PPO每个case有4次独立动作采样，不是4个训练种子。
+全部使用原best_joint三用户并确定性响应。仅平台采样，规则与原PPO greedy参考继承主测试结果。
+先平均动作draw，再平均每个天气日的4组私有偏好，最后对32天气日等权汇总。
+固定TRAIN收益门槛为4178.151401元/日。另列相对同TEST原PPO greedy与sampled收益比例，二者不替换原门槛。
+
+方法	执行	ΔΠ元/日	全网减排t/日	S元/日	DC足迹变化t/日	TRAIN门槛合格	原greedy收益比	原sampled收益比
+original_ppo	sampled	4114.75	0.735434	5945.71	3.690972	False	96.8054%	100.0000%
+cash_continued	sampled	4352.07	0.711467	6215.52	3.849416	True	102.3887%	105.7676%
+carbon_ppo	sampled	4249.60	1.214182	6269.36	3.350203	True	99.9781%	103.2774%
+cash_joint_ppo	sampled	4352.07	0.711467	6215.52	3.849416	True	102.3887%	105.7676%
+carbon_joint_ppo	sampled	4206.77	1.149579	6125.02	3.345955	True	98.9703%	102.2364%
+original_ppo	greedy_reference	4250.54	0.671647	6098.35	3.555723	True	100.0000%	103.3000%
+carbon_rule	deterministic_rule	3957.72	1.485658	6479.56	3.458784	False	93.1112%	96.1839%
+cash_response_rule	deterministic_rule	3829.12	1.062154	6311.32	3.702579	False	90.0856%	93.0584%
+
+天气配对差值（本方法减参考，95%区间仅描述给定策略下天气差异及有限动作采样）：
+carbon_joint_ppo__sampled vs carbon_ppo__sampled	platform_gain_vs_outside_yuan=-42.834789[-156.739761,71.070182]	grid_emissions_reduction_t=-0.064603[-0.283968,0.154761]	social_saving_vs_outside_yuan=-144.338987[-274.012116,-14.665858]
+carbon_joint_ppo__sampled vs carbon_rule__deterministic_rule	platform_gain_vs_outside_yuan=249.046051[-60.352005,558.444108]	grid_emissions_reduction_t=-0.336079[-0.762985,0.090826]	social_saving_vs_outside_yuan=-354.535762[-655.794461,-53.277064]
+carbon_joint_ppo__sampled vs cash_joint_ppo__sampled	platform_gain_vs_outside_yuan=-145.298841[-308.427182,17.829500]	grid_emissions_reduction_t=0.438111[0.081477,0.794746]	social_saving_vs_outside_yuan=-90.501992[-294.308371,113.304388]
+carbon_joint_ppo__sampled vs cash_response_rule__deterministic_rule	platform_gain_vs_outside_yuan=377.649308[40.671311,714.627306]	grid_emissions_reduction_t=0.087424[-0.434151,0.609000]	social_saving_vs_outside_yuan=-186.293229[-541.163486,168.577028]
+carbon_joint_ppo__sampled vs original_ppo__greedy_reference	platform_gain_vs_outside_yuan=-43.766907[-364.503926,276.970112]	grid_emissions_reduction_t=0.477932[0.118425,0.837439]	social_saving_vs_outside_yuan=26.669218[-395.120693,448.459129]
+carbon_joint_ppo__sampled vs original_ppo__sampled	platform_gain_vs_outside_yuan=92.021473[-160.747284,344.790231]	grid_emissions_reduction_t=0.414144[0.076421,0.751867]	social_saving_vs_outside_yuan=179.317561[-155.243263,513.878385]
+carbon_ppo__sampled vs carbon_rule__deterministic_rule	platform_gain_vs_outside_yuan=291.880841[-4.026288,587.787970]	grid_emissions_reduction_t=-0.271476[-0.665476,0.122524]	social_saving_vs_outside_yuan=-210.196776[-477.819340,57.425789]
+carbon_ppo__sampled vs cash_continued__sampled	platform_gain_vs_outside_yuan=-102.464051[-227.819316,22.891214]	grid_emissions_reduction_t=0.502715[0.159096,0.846333]	social_saving_vs_outside_yuan=53.836995[-120.893558,228.567548]
+carbon_ppo__sampled vs cash_response_rule__deterministic_rule	platform_gain_vs_outside_yuan=420.484098[86.756559,754.211636]	grid_emissions_reduction_t=0.152028[-0.272164,0.576219]	social_saving_vs_outside_yuan=-41.954242[-368.495578,284.587094]
+carbon_ppo__sampled vs original_ppo__greedy_reference	platform_gain_vs_outside_yuan=-0.932117[-301.725155,299.860921]	grid_emissions_reduction_t=0.542535[0.199481,0.885590]	social_saving_vs_outside_yuan=171.008205[-226.209476,568.225886]
+carbon_ppo__sampled vs original_ppo__sampled	platform_gain_vs_outside_yuan=134.856263[-79.492596,349.205121]	grid_emissions_reduction_t=0.478748[0.185164,0.772331]	social_saving_vs_outside_yuan=323.656547[24.112022,623.201073]
+cash_continued__sampled vs carbon_rule__deterministic_rule	platform_gain_vs_outside_yuan=394.344892[103.278427,685.411357]	grid_emissions_reduction_t=-0.774190[-1.326693,-0.221688]	social_saving_vs_outside_yuan=-264.033771[-518.611451,-9.456090]
+cash_continued__sampled vs cash_response_rule__deterministic_rule	platform_gain_vs_outside_yuan=522.948149[197.090722,848.805576]	grid_emissions_reduction_t=-0.350687[-0.793839,0.092466]	social_saving_vs_outside_yuan=-95.791237[-419.285898,227.703424]
+cash_continued__sampled vs original_ppo__greedy_reference	platform_gain_vs_outside_yuan=101.531934[-175.331382,378.395250]	grid_emissions_reduction_t=0.039821[-0.225305,0.304946]	social_saving_vs_outside_yuan=117.171210[-275.029501,509.371921]
+cash_continued__sampled vs original_ppo__sampled	platform_gain_vs_outside_yuan=237.320314[56.730292,417.910335]	grid_emissions_reduction_t=-0.023967[-0.274939,0.227005]	social_saving_vs_outside_yuan=269.819553[6.447446,533.191659]
+cash_joint_ppo__sampled vs carbon_rule__deterministic_rule	platform_gain_vs_outside_yuan=394.344892[103.278427,685.411357]	grid_emissions_reduction_t=-0.774190[-1.326693,-0.221688]	social_saving_vs_outside_yuan=-264.033771[-518.611451,-9.456090]
+cash_joint_ppo__sampled vs cash_continued__sampled	platform_gain_vs_outside_yuan=0.000000[0.000000,0.000000]	grid_emissions_reduction_t=0.000000[0.000000,0.000000]	social_saving_vs_outside_yuan=0.000000[0.000000,0.000000]
+cash_joint_ppo__sampled vs cash_response_rule__deterministic_rule	platform_gain_vs_outside_yuan=522.948149[197.090722,848.805576]	grid_emissions_reduction_t=-0.350687[-0.793839,0.092466]	social_saving_vs_outside_yuan=-95.791237[-419.285898,227.703424]
+cash_joint_ppo__sampled vs original_ppo__greedy_reference	platform_gain_vs_outside_yuan=101.531934[-175.331382,378.395250]	grid_emissions_reduction_t=0.039821[-0.225305,0.304946]	social_saving_vs_outside_yuan=117.171210[-275.029501,509.371921]
+cash_joint_ppo__sampled vs original_ppo__sampled	platform_gain_vs_outside_yuan=237.320314[56.730292,417.910335]	grid_emissions_reduction_t=-0.023967[-0.274939,0.227005]	social_saving_vs_outside_yuan=269.819553[6.447446,533.191659]
+original_ppo__sampled vs carbon_rule__deterministic_rule	platform_gain_vs_outside_yuan=157.024578[-190.645056,504.694212]	grid_emissions_reduction_t=-0.750223[-1.377710,-0.122737]	social_saving_vs_outside_yuan=-533.853323[-886.690721,-181.015925]
+original_ppo__sampled vs cash_response_rule__deterministic_rule	platform_gain_vs_outside_yuan=285.627835[-109.444990,680.700660]	grid_emissions_reduction_t=-0.326720[-0.861618,0.208179]	social_saving_vs_outside_yuan=-365.610789[-783.966885,52.745306]
+original_ppo__sampled vs original_ppo__greedy_reference	platform_gain_vs_outside_yuan=-135.788380[-285.242868,13.666108]	grid_emissions_reduction_t=0.063788[-0.031380,0.158956]	social_saving_vs_outside_yuan=-152.648343[-347.726232,42.429547]
+
+greedy主表保留；本补充不用于更换模型、重选规则、修改约束或在TEST上挑执行方式。

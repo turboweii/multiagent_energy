@@ -1,0 +1,8 @@
+﻿scheme,0.0,0.0025,0.005,0.01,0.02
+carbon_joint_ppo,519,304,362,98,0
+carbon_ppo,463,286,379,112,0
+carbon_rule,364,349,244,165,0
+cash_continued,488,338,328,106,0
+cash_joint_ppo,488,338,328,106,0
+cash_response_rule,236,352,192,152,8
+original_ppo,473,329,325,104,0

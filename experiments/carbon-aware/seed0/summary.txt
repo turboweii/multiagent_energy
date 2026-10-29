@@ -1,0 +1,42 @@
+碳感知合同：冻结策略比较
+
+算法根种子：0；只含一个训练种子。
+先在每个天气日内平均4个私有意愿，再对32个天气日等权统计和配对。
+95% t区间反映冻结策略面对天气场景的差异，不代表多种子训练稳定性。
+固定利润门槛：4178.151401 元/日（ALL TRAIN原PPO增量利润 4398.054106 的 95.00%）。
+固定TRAIN门槛和同组TEST原PPO的95%门槛分别列示；前者在TEST保持常量，后者仅描述相同测试条件下利润保留比例。
+规则128案例校准资格、ALL TRAIN确认、验证资格和TEST资格分别列示。
+全部增量相对真实已接受旧合同；全网减排和DC分摊足迹是不同指标，负减排表示增加。
+政策碳价与cap影子价分别列示；社会节约S和用户收益为辅助效果指标。
+
+用户组	方案	增量Π元/日	同组原PPO利润比	全网排放t/日	全网减排t/日	DC足迹减排t/日	社会S元/日	用户增量元/日	固定TRAIN门槛达标	同组TEST95%达标
+fixed_users	original_ppo	4250.54	1.0000	584.105122	0.671647	-3.555723	6098.35	785.18	True	True
+fixed_users	cash_continued	4398.27	1.0348	583.998369	0.778400	-3.866510	6245.74	747.90	True	True
+fixed_users	carbon_ppo	4392.25	1.0333	583.536677	1.240092	-3.391622	6461.58	971.26	True	True
+fixed_users	carbon_rule	3957.72	0.9311	583.291111	1.485658	-3.458784	6479.56	1532.40	False	False
+fixed_users	cash_response_rule	3829.12	0.9009	583.714614	1.062154	-3.702579	6311.32	1524.92	False	False
+fixed_users	carbon_joint_ppo	4260.38	1.0023	583.485269	1.291499	-3.253142	6164.30	838.83	True	True
+fixed_users	cash_joint_ppo	4398.27	1.0348	583.998369	0.778400	-3.866510	6245.74	747.90	True	True
+carbon_joint_users	original_ppo	4250.54	1.0000	584.105122	0.671647	-3.555723	6098.35	785.18	True	True
+carbon_joint_users	cash_continued	4398.27	1.0348	583.998369	0.778400	-3.866510	6245.74	747.90	True	True
+carbon_joint_users	carbon_ppo	4392.25	1.0333	583.536677	1.240092	-3.391622	6461.58	971.26	True	True
+carbon_joint_users	carbon_rule	3957.72	0.9311	583.291111	1.485658	-3.458784	6479.56	1532.40	False	False
+carbon_joint_users	cash_response_rule	3829.12	0.9009	583.714614	1.062154	-3.702579	6311.32	1524.92	False	False
+carbon_joint_users	carbon_joint_ppo	4260.38	1.0023	583.485269	1.291499	-3.253142	6164.30	838.83	True	True
+carbon_joint_users	cash_joint_ppo	4398.27	1.0348	583.998369	0.778400	-3.866510	6245.74	747.90	True	True
+cash_joint_users	original_ppo	4250.54	1.0000	584.105122	0.671647	-3.555723	6098.35	785.18	True	True
+cash_joint_users	cash_continued	4398.27	1.0348	583.998369	0.778400	-3.866510	6245.74	747.90	True	True
+cash_joint_users	carbon_ppo	4392.25	1.0333	583.536677	1.240092	-3.391622	6461.58	971.26	True	True
+cash_joint_users	carbon_rule	3957.72	0.9311	583.291111	1.485658	-3.458784	6479.56	1532.40	False	False
+cash_joint_users	cash_response_rule	3829.12	0.9009	583.714614	1.062154	-3.702579	6311.32	1524.92	False	False
+cash_joint_users	carbon_joint_ppo	4260.38	1.0023	583.485269	1.291499	-3.253142	6164.30	838.83	True	True
+cash_joint_users	cash_joint_ppo	4398.27	1.0348	583.998369	0.778400	-3.866510	6245.74	747.90	True	True
+
+配对差值为候选方案减对照方案；利润/全网减排/S为正表示对应指标更高。
+同用户组的比较保持三个用户策略相同。each_joint_system_with_own_users另比较各自平台+用户整体，不能归因于平台单独改变。
+规则权重从固定参考用户TRAIN选择；转移至联合用户组时仍使用原冻结权重。
+checkpoint_selection_user_cohort说明训练/验证资格对应的用户组，不把该资格当作其他用户组的验证结果。
+碳规则128案例校准候选族是否达到利润门槛：False；缺口 103.891902 元/日。未达到时不降低目标。
+选定碳规则ALL TRAIN确认：增量Π 3941.695371 元/日；固定门槛达标 False；缺口 236.456030 元/日。
+
+配对天气结果见paired_comparison.csv；完整量纲和选择/训练预算见summary_metadata.json。

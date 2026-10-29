@@ -1,0 +1,30 @@
+{
+  "root_seed": 0,
+  "cycles": 1,
+  "requested_user_steps_per_owner": 4096,
+  "requested_platform_steps": 8192,
+  "validation_candidates": "joint phase start and joint phase end",
+  "wall_seconds": 346.9902631250152,
+  "actual_phase_records": [
+    {
+      "actor": "0",
+      "actual_steps": 4096,
+      "optimizer_steps": 192
+    },
+    {
+      "actor": "1",
+      "actual_steps": 4096,
+      "optimizer_steps": 192
+    },
+    {
+      "actor": "2",
+      "actual_steps": 4096,
+      "optimizer_steps": 192
+    },
+    {
+      "actor": "platform",
+      "actual_steps": 8192,
+      "optimizer_steps": 192
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "actor": "0",
+    "actual_steps": 4096,
+    "optimizer_steps": 192
+  },
+  {
+    "actor": "1",
+    "actual_steps": 4096,
+    "optimizer_steps": 192
+  },
+  {
+    "actor": "2",
+    "actual_steps": 4096,
+    "optimizer_steps": 192
+  },
+  {
+    "actor": "platform",
+    "actual_steps": 8192,
+    "optimizer_steps": 192
+  }
+]
