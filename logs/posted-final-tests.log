@@ -1,0 +1,23 @@
+........................................................................ [ 13%]
+........................................................................ [ 27%]
+........................................................................ [ 40%]
+........................................................................ [ 54%]
+........................................................................ [ 67%]
+........................................................................ [ 81%]
+........................................................................ [ 94%]
+.............................                                            [100%]
+=============================== warnings summary ===============================
+tests/coordination/test_carbon_price_grid.py::test_priced_sparse_dispatch_matches_pypsa_reference[None]
+  /Users/turbo/Documents/Codex/2026-10-28/levy-m-segev-i-tuisov-a/work/energy-net-venv/lib/python3.12/site-packages/pypsa/network/io.py:2079: FutureWarning: pandas infers the `str` dtype for string data since its version 3.0. PyPSA still converts it back to numpy object dtype on import, but will keep it from PyPSA 2.0 on. Set `pypsa.options.api.legacy_string_dtype` explicitly to suppress this warning.
+    new_static = _coerce_string_dtypes(new_static)
+
+tests/coordination/test_carbon_price_grid.py::test_priced_sparse_dispatch_matches_pypsa_reference[None]
+tests/coordination/test_carbon_price_grid.py::test_priced_sparse_dispatch_matches_pypsa_reference[75.0]
+tests/coordination/test_grid.py::test_sparse_solver_matches_pypsa_with_weighted_carbon_constraint
+tests/coordination/test_grid.py::test_single_period_pypsa_dispatch_agrees_when_optimum_is_unique
+  /Users/turbo/Desktop/energy-net-original-20261028/energy_net/coordination/grid.py:350: FutureWarning: The default value of `include_objective_constant` will change from True to False in version 2.0. Set `include_objective_constant` explicitly to suppress this warning. Using False improves LP numerical conditioning by not including the objective constant as a variable.
+    status, condition = network.optimize(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+533 passed, 5 warnings in 98.66s (0:01:38)
+COORDINATION_FULL_SUITE elapsed_seconds=98.910 exit_code=0

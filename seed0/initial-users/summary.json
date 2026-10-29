@@ -1,0 +1,147 @@
+{
+  "seed": 0,
+  "training": [
+    {
+      "user": 0,
+      "actual_steps": 8192,
+      "optimizer_steps": 384,
+      "warm_start": {
+        "source_policy": "ContractActorCriticPolicy",
+        "target_policy": "BinaryContractActorCriticPolicy",
+        "source_num_timesteps": 32768,
+        "source_num_updates": 1536,
+        "copied_tensor_names": [
+          "mlp_extractor.option_score.0.bias",
+          "mlp_extractor.option_score.0.weight",
+          "mlp_extractor.option_score.2.bias",
+          "mlp_extractor.option_score.2.weight",
+          "mlp_extractor.option_score.4.bias",
+          "mlp_extractor.option_score.4.weight",
+          "mlp_extractor.value_encoder.0.bias",
+          "mlp_extractor.value_encoder.0.weight",
+          "mlp_extractor.value_encoder.2.bias",
+          "mlp_extractor.value_encoder.2.weight",
+          "value_net.bias",
+          "value_net.weight"
+        ],
+        "copied_tensor_count": 12,
+        "contract_hidden_sizes": [
+          32,
+          32
+        ],
+        "value_hidden_sizes": [
+          64,
+          32
+        ],
+        "context_hidden_sizes": [
+          32,
+          16
+        ],
+        "context_residual": "unchanged, zero output at warm start",
+        "optimizer": "fresh target optimizer; no legacy state/moments copied",
+        "optimizer_state_entries": 0,
+        "algorithm_seed": 1,
+        "gamma": 1.0,
+        "gae_lambda": 1.0,
+        "target_num_timesteps": 0,
+        "target_num_updates": 0
+      }
+    },
+    {
+      "user": 1,
+      "actual_steps": 8192,
+      "optimizer_steps": 384,
+      "warm_start": {
+        "source_policy": "ContractActorCriticPolicy",
+        "target_policy": "BinaryContractActorCriticPolicy",
+        "source_num_timesteps": 32768,
+        "source_num_updates": 1536,
+        "copied_tensor_names": [
+          "mlp_extractor.option_score.0.bias",
+          "mlp_extractor.option_score.0.weight",
+          "mlp_extractor.option_score.2.bias",
+          "mlp_extractor.option_score.2.weight",
+          "mlp_extractor.option_score.4.bias",
+          "mlp_extractor.option_score.4.weight",
+          "mlp_extractor.value_encoder.0.bias",
+          "mlp_extractor.value_encoder.0.weight",
+          "mlp_extractor.value_encoder.2.bias",
+          "mlp_extractor.value_encoder.2.weight",
+          "value_net.bias",
+          "value_net.weight"
+        ],
+        "copied_tensor_count": 12,
+        "contract_hidden_sizes": [
+          32,
+          32
+        ],
+        "value_hidden_sizes": [
+          64,
+          32
+        ],
+        "context_hidden_sizes": [
+          32,
+          16
+        ],
+        "context_residual": "unchanged, zero output at warm start",
+        "optimizer": "fresh target optimizer; no legacy state/moments copied",
+        "optimizer_state_entries": 0,
+        "algorithm_seed": 2,
+        "gamma": 1.0,
+        "gae_lambda": 1.0,
+        "target_num_timesteps": 0,
+        "target_num_updates": 0
+      }
+    },
+    {
+      "user": 2,
+      "actual_steps": 8192,
+      "optimizer_steps": 384,
+      "warm_start": {
+        "source_policy": "ContractActorCriticPolicy",
+        "target_policy": "BinaryContractActorCriticPolicy",
+        "source_num_timesteps": 32768,
+        "source_num_updates": 1536,
+        "copied_tensor_names": [
+          "mlp_extractor.option_score.0.bias",
+          "mlp_extractor.option_score.0.weight",
+          "mlp_extractor.option_score.2.bias",
+          "mlp_extractor.option_score.2.weight",
+          "mlp_extractor.option_score.4.bias",
+          "mlp_extractor.option_score.4.weight",
+          "mlp_extractor.value_encoder.0.bias",
+          "mlp_extractor.value_encoder.0.weight",
+          "mlp_extractor.value_encoder.2.bias",
+          "mlp_extractor.value_encoder.2.weight",
+          "value_net.bias",
+          "value_net.weight"
+        ],
+        "copied_tensor_count": 12,
+        "contract_hidden_sizes": [
+          32,
+          32
+        ],
+        "value_hidden_sizes": [
+          64,
+          32
+        ],
+        "context_hidden_sizes": [
+          32,
+          16
+        ],
+        "context_residual": "unchanged, zero output at warm start",
+        "optimizer": "fresh target optimizer; no legacy state/moments copied",
+        "optimizer_state_entries": 0,
+        "algorithm_seed": 3,
+        "gamma": 1.0,
+        "gae_lambda": 1.0,
+        "target_num_timesteps": 0,
+        "target_num_updates": 0
+      }
+    }
+  ],
+  "source": "/Users/turbo/Documents/Codex/2026-10-28/levy-m-segev-i-tuisov-a/outputs/动态报价学习/seed0/varied-initial-users",
+  "objective": "actual daily own utility, gamma=1, reward=yuan/1000",
+  "public_training_days": 256,
+  "independent_private_draws_per_day": 8
+}

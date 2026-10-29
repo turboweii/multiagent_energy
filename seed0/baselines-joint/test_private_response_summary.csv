@@ -1,0 +1,9 @@
+﻿scheme,private_evaluation_only,actual_offers,positive_utility_offers,positive_utility_rejections,negative_utility_offers,indifferent_utility_offers,accepted_positive_utility_offers,accepted_indifferent_offers,positive_utility_rejection_fraction
+exit,True,0,0,0,0,0,0,0,0.0
+strong_fixed_raw,True,704,264,0,440,0,264,0,0.0
+strong_fixed_matrix_greedy_route,True,827,428,0,399,0,428,0,0.0
+strong_value_share_rule,True,928,300,0,628,0,300,0,0.0
+learned_response_prior,True,909,521,0,388,0,521,0,0.0
+learned_response_online_map,True,910,515,0,395,0,515,0,0.0
+ppo,True,1226,428,0,798,0,428,0,0.0
+ppo_same_weights_zero_explicit_history,True,1234,330,0,904,0,330,0,0.0

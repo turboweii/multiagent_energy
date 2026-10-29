@@ -1,0 +1,13 @@
+{
+  "seed": 0,
+  "family": "varied",
+  "validation": {
+    "seed": 1007.5,
+    "quote": 27.25,
+    "user": 1.0,
+    "regret_per_gpu_hour": 0.0,
+    "individual_rational": 1.0,
+    "minimizes": 1.0
+  },
+  "source": "/Users/turbo/Documents/Codex/2026-10-28/levy-m-segev-i-tuisov-a/outputs/净收益分成与旧收益底线/seed0/initial_users"
+}

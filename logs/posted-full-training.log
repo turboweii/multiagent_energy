@@ -1,0 +1,18 @@
+{"history": true, "step": 0, "net_saving": 0.0, "profit": 0.0, "resource_saving": 0.0, "social_saving": 0.0, "accepted": 0.0}
+{"history": true, "step": 8192, "net_saving": 2234.7981452014947, "profit": 1787.8385161611754, "resource_saving": 8112.518145201486, "social_saving": 5851.636142043191, "accepted": 3.9921875}
+{"history": true, "step": 16384, "net_saving": 2201.4656308331755, "profit": 1761.1725046664817, "resource_saving": 8487.268130833203, "social_saving": 6355.852065400917, "accepted": 4.3671875}
+{"history": true, "step": 24576, "net_saving": 2576.582853507348, "profit": 2061.266282805852, "resource_saving": 7888.157853507361, "social_saving": 5951.990922308705, "accepted": 4.0}
+{"history": true, "step": 32768, "net_saving": 3773.869897192695, "profit": 3019.0959177541527, "resource_saving": 7358.86239719267, "social_saving": 5745.162840780076, "accepted": 3.390625}
+{"history": true, "step": 40960, "net_saving": 4033.6830454020264, "profit": 3226.9464363216543, "resource_saving": 7734.325545402004, "social_saving": 6076.112040727368, "accepted": 3.515625}
+{"history": true, "step": 49152, "net_saving": 4328.386369308744, "profit": 3462.70909544698, "resource_saving": 6976.186369308745, "social_saving": 5479.025969005662, "accepted": 3.09375}
+{"history": true, "step": 57344, "net_saving": 4490.29089658846, "profit": 3592.2327172707946, "resource_saving": 6690.869646588446, "social_saving": 5457.955642862851, "accepted": 2.90625}
+{"history": true, "step": 65536, "net_saving": 5038.98348177184, "profit": 4031.186785417466, "resource_saving": 7844.755981771794, "social_saving": 6191.7338714039415, "accepted": 3.359375}
+{"history": true, "step": 73728, "net_saving": 4738.020849099506, "profit": 3790.416679279613, "resource_saving": 7271.374599099494, "social_saving": 5787.570504174399, "accepted": 3.1875}
+{"history": true, "step": 81920, "net_saving": 5225.118218914753, "profit": 4180.094575131805, "resource_saving": 7877.834468914754, "social_saving": 6270.8982613598655, "accepted": 3.359375}
+{"history": true, "step": 90112, "net_saving": 5591.227670446494, "profit": 4472.982136357177, "resource_saving": 8696.03642044649, "social_saving": 6809.711220320705, "accepted": 3.71875}
+{"history": true, "step": 98304, "net_saving": 5871.193246894112, "profit": 4696.954597515287, "resource_saving": 8627.758246894118, "social_saving": 6830.573171020513, "accepted": 3.5703125}
+{"history": true, "step": 106496, "net_saving": 5488.599113835189, "profit": 4390.879291068148, "resource_saving": 8002.771613835175, "social_saving": 6332.168772597211, "accepted": 3.3125}
+{"history": true, "step": 114688, "net_saving": 5508.178602457865, "profit": 4406.542881966264, "resource_saving": 8254.64110245787, "social_saving": 6514.950581124489, "accepted": 3.4296875}
+{"history": true, "step": 122880, "net_saving": 5514.04123799982, "profit": 4411.2329903998325, "resource_saving": 7860.689987999807, "social_saving": 6247.0592742021345, "accepted": 3.359375}
+{"history": true, "step": 131072, "net_saving": 5653.303504119954, "profit": 4522.642803295945, "resource_saving": 8374.971004119947, "social_saving": 6660.314731630128, "accepted": 3.6796875}
+{"completed": "/Users/turbo/Documents/Codex/2026-10-28/levy-m-segev-i-tuisov-a/outputs/\u5e8f\u8d2f\u5408\u540c\u534f\u540c/seed0/full-history", "selected_step": 98304, "selected_joint_cycle": 2}

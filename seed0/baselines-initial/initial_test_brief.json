@@ -1,0 +1,771 @@
+{
+  "checkpoint": "best_fixed",
+  "algorithm_seed": 0,
+  "public_weather_days": 32,
+  "private_cases": 128,
+  "private_draws_per_public_day": [
+    4
+  ],
+  "schemes": [
+    {
+      "scheme": "exit",
+      "mean_M_yuan": 0.0,
+      "mean_S_yuan": 0.0,
+      "mean_profit_delta_yuan": 0.0,
+      "mean_G_yuan": 0.0,
+      "mean_R_yuan": 0.0,
+      "mean_user_gain_yuan": 0.0,
+      "mean_accepted": 0.0,
+      "mean_published": 0.0,
+      "mean_old_absolute_profit_yuan": -166942.12688323864,
+      "mean_new_absolute_profit_yuan": -166942.12688323864,
+      "mean_fixed_cost_yuan": 2211840.0,
+      "private_response": {
+        "private_evaluation_only": true,
+        "actual_offers": 0,
+        "positive_utility_offers": 0,
+        "positive_utility_rejections": 0,
+        "negative_utility_offers": 0,
+        "indifferent_utility_offers": 0,
+        "accepted_positive_utility_offers": 0,
+        "accepted_indifferent_offers": 0,
+        "positive_utility_rejection_fraction": 0.0
+      },
+      "owner_rates": [
+        {
+          "owner": 0,
+          "n_published": 0,
+          "rates_percent_counts": {},
+          "rate_frequency_within_owner": {},
+          "n_rate_levels": 0,
+          "mean_rate_percent": null
+        },
+        {
+          "owner": 1,
+          "n_published": 0,
+          "rates_percent_counts": {},
+          "rate_frequency_within_owner": {},
+          "n_rate_levels": 0,
+          "mean_rate_percent": null
+        },
+        {
+          "owner": 2,
+          "n_published": 0,
+          "rates_percent_counts": {},
+          "rate_frequency_within_owner": {},
+          "n_rate_levels": 0,
+          "mean_rate_percent": null
+        }
+      ]
+    },
+    {
+      "scheme": "strong_fixed_raw",
+      "mean_M_yuan": 3029.0102472872813,
+      "mean_S_yuan": 3228.5374317990554,
+      "mean_profit_delta_yuan": 2423.20819782982,
+      "mean_G_yuan": 3937.1552472873436,
+      "mean_R_yuan": 908.1450000000623,
+      "mean_user_gain_yuan": 199.52718451171395,
+      "mean_accepted": 2.0625,
+      "mean_published": 5.5,
+      "mean_old_absolute_profit_yuan": -166942.12688323864,
+      "mean_new_absolute_profit_yuan": -164518.9186854088,
+      "mean_fixed_cost_yuan": 2211840.0,
+      "private_response": {
+        "private_evaluation_only": true,
+        "actual_offers": 704,
+        "positive_utility_offers": 264,
+        "positive_utility_rejections": 0,
+        "negative_utility_offers": 440,
+        "indifferent_utility_offers": 0,
+        "accepted_positive_utility_offers": 264,
+        "accepted_indifferent_offers": 0,
+        "positive_utility_rejection_fraction": 0.0
+      },
+      "owner_rates": [
+        {
+          "owner": 0,
+          "n_published": 264,
+          "rates_percent_counts": {
+            "0.25%": 264
+          },
+          "rate_frequency_within_owner": {
+            "0.25%": 1.0
+          },
+          "n_rate_levels": 1,
+          "mean_rate_percent": 0.24999999999999997
+        },
+        {
+          "owner": 1,
+          "n_published": 240,
+          "rates_percent_counts": {
+            "0.25%": 240
+          },
+          "rate_frequency_within_owner": {
+            "0.25%": 1.0
+          },
+          "n_rate_levels": 1,
+          "mean_rate_percent": 0.25
+        },
+        {
+          "owner": 2,
+          "n_published": 200,
+          "rates_percent_counts": {
+            "0.25%": 200
+          },
+          "rate_frequency_within_owner": {
+            "0.25%": 1.0
+          },
+          "n_rate_levels": 1,
+          "mean_rate_percent": 0.24999999999999997
+        }
+      ]
+    },
+    {
+      "scheme": "strong_fixed_matrix_greedy_route",
+      "mean_M_yuan": 3962.8698693286597,
+      "mean_S_yuan": 5205.9754466445565,
+      "mean_profit_delta_yuan": 3170.2958954628984,
+      "mean_G_yuan": 6400.947369328674,
+      "mean_R_yuan": 2438.077500000014,
+      "mean_user_gain_yuan": 1243.1055773158841,
+      "mean_accepted": 3.34375,
+      "mean_published": 6.4609375,
+      "mean_old_absolute_profit_yuan": -166942.12688323864,
+      "mean_new_absolute_profit_yuan": -163771.8309877757,
+      "mean_fixed_cost_yuan": 2211840.0,
+      "private_response": {
+        "private_evaluation_only": true,
+        "actual_offers": 827,
+        "positive_utility_offers": 428,
+        "positive_utility_rejections": 0,
+        "negative_utility_offers": 399,
+        "indifferent_utility_offers": 0,
+        "accepted_positive_utility_offers": 428,
+        "accepted_indifferent_offers": 0,
+        "positive_utility_rejection_fraction": 0.0
+      },
+      "owner_rates": [
+        {
+          "owner": 0,
+          "n_published": 263,
+          "rates_percent_counts": {
+            "0.25%": 148,
+            "0.5%": 115
+          },
+          "rate_frequency_within_owner": {
+            "0.25%": 0.5627376425855514,
+            "0.5%": 0.4372623574144487
+          },
+          "n_rate_levels": 2,
+          "mean_rate_percent": 0.3593155893536122
+        },
+        {
+          "owner": 1,
+          "n_published": 300,
+          "rates_percent_counts": {
+            "0.25%": 128,
+            "0.5%": 172
+          },
+          "rate_frequency_within_owner": {
+            "0.25%": 0.4266666666666667,
+            "0.5%": 0.5733333333333334
+          },
+          "n_rate_levels": 2,
+          "mean_rate_percent": 0.39333333333333337
+        },
+        {
+          "owner": 2,
+          "n_published": 264,
+          "rates_percent_counts": {
+            "0.25%": 164,
+            "0.5%": 100
+          },
+          "rate_frequency_within_owner": {
+            "0.25%": 0.6212121212121212,
+            "0.5%": 0.3787878787878788
+          },
+          "n_rate_levels": 2,
+          "mean_rate_percent": 0.34469696969696967
+        }
+      ]
+    },
+    {
+      "scheme": "strong_value_share_rule",
+      "mean_M_yuan": 3730.8271058454598,
+      "mean_S_yuan": 4822.534071172507,
+      "mean_profit_delta_yuan": 2984.6616846763786,
+      "mean_G_yuan": 5469.244605845477,
+      "mean_R_yuan": 1738.4175000000178,
+      "mean_user_gain_yuan": 1091.7069653270291,
+      "mean_accepted": 2.34375,
+      "mean_published": 7.25,
+      "mean_old_absolute_profit_yuan": -166942.12688323864,
+      "mean_new_absolute_profit_yuan": -163957.46519856228,
+      "mean_fixed_cost_yuan": 2211840.0,
+      "private_response": {
+        "private_evaluation_only": true,
+        "actual_offers": 928,
+        "positive_utility_offers": 300,
+        "positive_utility_rejections": 0,
+        "negative_utility_offers": 628,
+        "indifferent_utility_offers": 0,
+        "accepted_positive_utility_offers": 300,
+        "accepted_indifferent_offers": 0,
+        "positive_utility_rejection_fraction": 0.0
+      },
+      "owner_rates": [
+        {
+          "owner": 0,
+          "n_published": 304,
+          "rates_percent_counts": {
+            "0%": 58,
+            "0.25%": 94,
+            "0.5%": 152
+          },
+          "rate_frequency_within_owner": {
+            "0%": 0.19078947368421054,
+            "0.25%": 0.3092105263157895,
+            "0.5%": 0.5
+          },
+          "n_rate_levels": 3,
+          "mean_rate_percent": 0.3273026315789474
+        },
+        {
+          "owner": 1,
+          "n_published": 344,
+          "rates_percent_counts": {
+            "0%": 76,
+            "0.25%": 176,
+            "0.5%": 92
+          },
+          "rate_frequency_within_owner": {
+            "0%": 0.22093023255813954,
+            "0.25%": 0.5116279069767442,
+            "0.5%": 0.26744186046511625
+          },
+          "n_rate_levels": 3,
+          "mean_rate_percent": 0.2616279069767442
+        },
+        {
+          "owner": 2,
+          "n_published": 280,
+          "rates_percent_counts": {
+            "0%": 38,
+            "0.25%": 146,
+            "0.5%": 96
+          },
+          "rate_frequency_within_owner": {
+            "0%": 0.1357142857142857,
+            "0.25%": 0.5214285714285715,
+            "0.5%": 0.34285714285714286
+          },
+          "n_rate_levels": 3,
+          "mean_rate_percent": 0.30178571428571427
+        }
+      ]
+    },
+    {
+      "scheme": "learned_response_prior",
+      "mean_M_yuan": 4552.335206895849,
+      "mean_S_yuan": 6274.794767214131,
+      "mean_profit_delta_yuan": 3641.868165516664,
+      "mean_G_yuan": 8274.847706895842,
+      "mean_R_yuan": 3722.5124999999916,
+      "mean_user_gain_yuan": 1722.4595603182902,
+      "mean_accepted": 4.0703125,
+      "mean_published": 7.1015625,
+      "mean_old_absolute_profit_yuan": -166942.12688323864,
+      "mean_new_absolute_profit_yuan": -163300.25871772197,
+      "mean_fixed_cost_yuan": 2211840.0,
+      "private_response": {
+        "private_evaluation_only": true,
+        "actual_offers": 909,
+        "positive_utility_offers": 521,
+        "positive_utility_rejections": 0,
+        "negative_utility_offers": 388,
+        "indifferent_utility_offers": 0,
+        "accepted_positive_utility_offers": 521,
+        "accepted_indifferent_offers": 0,
+        "positive_utility_rejection_fraction": 0.0
+      },
+      "owner_rates": [
+        {
+          "owner": 0,
+          "n_published": 301,
+          "rates_percent_counts": {
+            "0%": 43,
+            "0.25%": 199,
+            "0.5%": 59
+          },
+          "rate_frequency_within_owner": {
+            "0%": 0.14285714285714285,
+            "0.25%": 0.6611295681063123,
+            "0.5%": 0.19601328903654486
+          },
+          "n_rate_levels": 3,
+          "mean_rate_percent": 0.2632890365448505
+        },
+        {
+          "owner": 1,
+          "n_published": 336,
+          "rates_percent_counts": {
+            "0%": 45,
+            "0.25%": 52,
+            "0.5%": 140,
+            "1%": 99
+          },
+          "rate_frequency_within_owner": {
+            "0%": 0.13392857142857142,
+            "0.25%": 0.15476190476190477,
+            "0.5%": 0.4166666666666667,
+            "1%": 0.29464285714285715
+          },
+          "n_rate_levels": 4,
+          "mean_rate_percent": 0.5416666666666666
+        },
+        {
+          "owner": 2,
+          "n_published": 272,
+          "rates_percent_counts": {
+            "0%": 116,
+            "0.25%": 73,
+            "0.5%": 28,
+            "1%": 51,
+            "2%": 4
+          },
+          "rate_frequency_within_owner": {
+            "0%": 0.4264705882352941,
+            "0.25%": 0.26838235294117646,
+            "0.5%": 0.10294117647058823,
+            "1%": 0.1875,
+            "2%": 0.014705882352941176
+          },
+          "n_rate_levels": 5,
+          "mean_rate_percent": 0.3354779411764706
+        }
+      ]
+    },
+    {
+      "scheme": "learned_response_online_map",
+      "mean_M_yuan": 4710.959796523171,
+      "mean_S_yuan": 6242.515562851278,
+      "mean_profit_delta_yuan": 3768.7678372185246,
+      "mean_G_yuan": 8191.844796523181,
+      "mean_R_yuan": 3480.8850000000093,
+      "mean_user_gain_yuan": 1531.5557663281004,
+      "mean_accepted": 4.0234375,
+      "mean_published": 7.109375,
+      "mean_old_absolute_profit_yuan": -166942.12688323864,
+      "mean_new_absolute_profit_yuan": -163173.35904602008,
+      "mean_fixed_cost_yuan": 2211840.0,
+      "private_response": {
+        "private_evaluation_only": true,
+        "actual_offers": 910,
+        "positive_utility_offers": 515,
+        "positive_utility_rejections": 0,
+        "negative_utility_offers": 395,
+        "indifferent_utility_offers": 0,
+        "accepted_positive_utility_offers": 515,
+        "accepted_indifferent_offers": 0,
+        "positive_utility_rejection_fraction": 0.0
+      },
+      "owner_rates": [
+        {
+          "owner": 0,
+          "n_published": 301,
+          "rates_percent_counts": {
+            "0%": 41,
+            "0.25%": 226,
+            "0.5%": 34
+          },
+          "rate_frequency_within_owner": {
+            "0%": 0.1362126245847176,
+            "0.25%": 0.7508305647840532,
+            "0.5%": 0.11295681063122924
+          },
+          "n_rate_levels": 3,
+          "mean_rate_percent": 0.24418604651162784
+        },
+        {
+          "owner": 1,
+          "n_published": 337,
+          "rates_percent_counts": {
+            "0%": 42,
+            "0.25%": 57,
+            "0.5%": 154,
+            "1%": 84
+          },
+          "rate_frequency_within_owner": {
+            "0%": 0.12462908011869436,
+            "0.25%": 0.16913946587537093,
+            "0.5%": 0.456973293768546,
+            "1%": 0.24925816023738873
+          },
+          "n_rate_levels": 4,
+          "mean_rate_percent": 0.5200296735905044
+        },
+        {
+          "owner": 2,
+          "n_published": 272,
+          "rates_percent_counts": {
+            "0%": 107,
+            "0.25%": 81,
+            "0.5%": 28,
+            "1%": 52,
+            "2%": 4
+          },
+          "rate_frequency_within_owner": {
+            "0%": 0.39338235294117646,
+            "0.25%": 0.2977941176470588,
+            "0.5%": 0.10294117647058823,
+            "1%": 0.19117647058823528,
+            "2%": 0.014705882352941176
+          },
+          "n_rate_levels": 5,
+          "mean_rate_percent": 0.3465073529411765
+        }
+      ]
+    },
+    {
+      "scheme": "ppo",
+      "mean_M_yuan": 5223.320289130656,
+      "mean_S_yuan": 6104.579871106426,
+      "mean_profit_delta_yuan": 4178.656231304533,
+      "mean_G_yuan": 7813.621539130686,
+      "mean_R_yuan": 2590.3012500000295,
+      "mean_user_gain_yuan": 881.25958197574,
+      "mean_accepted": 3.3515625,
+      "mean_published": 9.609375,
+      "mean_old_absolute_profit_yuan": -166942.12688323864,
+      "mean_new_absolute_profit_yuan": -162763.4706519341,
+      "mean_fixed_cost_yuan": 2211840.0,
+      "private_response": {
+        "private_evaluation_only": true,
+        "actual_offers": 1230,
+        "positive_utility_offers": 429,
+        "positive_utility_rejections": 0,
+        "negative_utility_offers": 801,
+        "indifferent_utility_offers": 0,
+        "accepted_positive_utility_offers": 429,
+        "accepted_indifferent_offers": 0,
+        "positive_utility_rejection_fraction": 0.0
+      },
+      "owner_rates": [
+        {
+          "owner": 0,
+          "n_published": 420,
+          "rates_percent_counts": {
+            "0%": 191,
+            "0.25%": 202,
+            "0.5%": 27
+          },
+          "rate_frequency_within_owner": {
+            "0%": 0.45476190476190476,
+            "0.25%": 0.48095238095238096,
+            "0.5%": 0.06428571428571428
+          },
+          "n_rate_levels": 3,
+          "mean_rate_percent": 0.1523809523809524
+        },
+        {
+          "owner": 1,
+          "n_published": 406,
+          "rates_percent_counts": {
+            "0%": 114,
+            "0.25%": 124,
+            "0.5%": 168
+          },
+          "rate_frequency_within_owner": {
+            "0%": 0.28078817733990147,
+            "0.25%": 0.3054187192118227,
+            "0.5%": 0.41379310344827586
+          },
+          "n_rate_levels": 3,
+          "mean_rate_percent": 0.2832512315270936
+        },
+        {
+          "owner": 2,
+          "n_published": 404,
+          "rates_percent_counts": {
+            "0%": 147,
+            "0.25%": 22,
+            "0.5%": 126,
+            "1%": 109
+          },
+          "rate_frequency_within_owner": {
+            "0%": 0.36386138613861385,
+            "0.25%": 0.054455445544554455,
+            "0.5%": 0.3118811881188119,
+            "1%": 0.2698019801980198
+          },
+          "n_rate_levels": 4,
+          "mean_rate_percent": 0.4393564356435643
+        }
+      ]
+    },
+    {
+      "scheme": "ppo_same_weights_zero_explicit_history",
+      "mean_M_yuan": 5173.482328130235,
+      "mean_S_yuan": 6080.047044211665,
+      "mean_profit_delta_yuan": 4138.785862504176,
+      "mean_G_yuan": 7898.29982813024,
+      "mean_R_yuan": 2724.8175000000047,
+      "mean_user_gain_yuan": 906.5647160814249,
+      "mean_accepted": 3.453125,
+      "mean_published": 9.5390625,
+      "mean_old_absolute_profit_yuan": -166942.12688323864,
+      "mean_new_absolute_profit_yuan": -162803.34102073446,
+      "mean_fixed_cost_yuan": 2211840.0,
+      "private_response": {
+        "private_evaluation_only": true,
+        "actual_offers": 1221,
+        "positive_utility_offers": 442,
+        "positive_utility_rejections": 0,
+        "negative_utility_offers": 779,
+        "indifferent_utility_offers": 0,
+        "accepted_positive_utility_offers": 442,
+        "accepted_indifferent_offers": 0,
+        "positive_utility_rejection_fraction": 0.0
+      },
+      "owner_rates": [
+        {
+          "owner": 0,
+          "n_published": 413,
+          "rates_percent_counts": {
+            "0%": 193,
+            "0.25%": 195,
+            "0.5%": 25
+          },
+          "rate_frequency_within_owner": {
+            "0%": 0.46731234866828086,
+            "0.25%": 0.4721549636803874,
+            "0.5%": 0.06053268765133172
+          },
+          "n_rate_levels": 3,
+          "mean_rate_percent": 0.1483050847457627
+        },
+        {
+          "owner": 1,
+          "n_published": 404,
+          "rates_percent_counts": {
+            "0%": 129,
+            "0.25%": 96,
+            "0.5%": 175,
+            "1%": 4
+          },
+          "rate_frequency_within_owner": {
+            "0%": 0.3193069306930693,
+            "0.25%": 0.2376237623762376,
+            "0.5%": 0.43316831683168316,
+            "1%": 0.009900990099009901
+          },
+          "n_rate_levels": 4,
+          "mean_rate_percent": 0.28589108910891087
+        },
+        {
+          "owner": 2,
+          "n_published": 404,
+          "rates_percent_counts": {
+            "0%": 146,
+            "0.25%": 22,
+            "0.5%": 126,
+            "1%": 110
+          },
+          "rate_frequency_within_owner": {
+            "0%": 0.3613861386138614,
+            "0.25%": 0.054455445544554455,
+            "0.5%": 0.3118811881188119,
+            "1%": 0.2722772277227723
+          },
+          "n_rate_levels": 4,
+          "mean_rate_percent": 0.4418316831683169
+        }
+      ]
+    },
+    {
+      "scheme": "no_history_ppo",
+      "mean_M_yuan": 5302.757280755441,
+      "mean_S_yuan": 6080.454315494182,
+      "mean_profit_delta_yuan": 4242.205824604328,
+      "mean_G_yuan": 7826.773530755476,
+      "mean_R_yuan": 2524.016250000035,
+      "mean_user_gain_yuan": 777.697034738707,
+      "mean_accepted": 3.3359375,
+      "mean_published": 7.828125,
+      "mean_old_absolute_profit_yuan": -166942.12688323864,
+      "mean_new_absolute_profit_yuan": -162699.92105863433,
+      "mean_fixed_cost_yuan": 2211840.0,
+      "private_response": {
+        "private_evaluation_only": true,
+        "actual_offers": 1002,
+        "positive_utility_offers": 427,
+        "positive_utility_rejections": 0,
+        "negative_utility_offers": 575,
+        "indifferent_utility_offers": 0,
+        "accepted_positive_utility_offers": 427,
+        "accepted_indifferent_offers": 0,
+        "positive_utility_rejection_fraction": 0.0
+      },
+      "owner_rates": [
+        {
+          "owner": 0,
+          "n_published": 369,
+          "rates_percent_counts": {
+            "0%": 140,
+            "0.25%": 221,
+            "0.5%": 8
+          },
+          "rate_frequency_within_owner": {
+            "0%": 0.3794037940379404,
+            "0.25%": 0.5989159891598916,
+            "0.5%": 0.02168021680216802
+          },
+          "n_rate_levels": 3,
+          "mean_rate_percent": 0.16056910569105692
+        },
+        {
+          "owner": 1,
+          "n_published": 317,
+          "rates_percent_counts": {
+            "0%": 66,
+            "0.25%": 40,
+            "0.5%": 211
+          },
+          "rate_frequency_within_owner": {
+            "0%": 0.2082018927444795,
+            "0.25%": 0.12618296529968454,
+            "0.5%": 0.6656151419558359
+          },
+          "n_rate_levels": 3,
+          "mean_rate_percent": 0.3643533123028392
+        },
+        {
+          "owner": 2,
+          "n_published": 316,
+          "rates_percent_counts": {
+            "0%": 100,
+            "0.25%": 8,
+            "0.5%": 111,
+            "1%": 97
+          },
+          "rate_frequency_within_owner": {
+            "0%": 0.31645569620253167,
+            "0.25%": 0.02531645569620253,
+            "0.5%": 0.3512658227848101,
+            "1%": 0.3069620253164557
+          },
+          "n_rate_levels": 4,
+          "mean_rate_percent": 0.48892405063291144
+        }
+      ]
+    }
+  ],
+  "weather_paired_ppo_differences": [
+    {
+      "scheme": "ppo",
+      "reference": "strong_fixed_matrix_greedy_route",
+      "public_weather_days": 32,
+      "actual_M_yuan": {
+        "delta": 1260.450419801997,
+        "low95": 928.3844676560977,
+        "high95": 1592.5163719478962
+      },
+      "actual_S_yuan": {
+        "delta": 898.6044244618696,
+        "low95": 570.0267053411987,
+        "high95": 1227.1821435825404
+      },
+      "actual_platform_gain_yuan": {
+        "delta": 1008.3603358416347,
+        "low95": 742.7075741249172,
+        "high95": 1274.013097558352
+      }
+    },
+    {
+      "scheme": "ppo",
+      "reference": "learned_response_prior",
+      "public_weather_days": 32,
+      "actual_M_yuan": {
+        "delta": 670.9850822348074,
+        "low95": 350.54818887251827,
+        "high95": 991.4219755970964
+      },
+      "actual_S_yuan": {
+        "delta": -170.2148961077046,
+        "low95": -474.4192496445284,
+        "high95": 133.98945742911923
+      },
+      "actual_platform_gain_yuan": {
+        "delta": 536.7880657878691,
+        "low95": 280.43855109803087,
+        "high95": 793.1375804777073
+      }
+    },
+    {
+      "scheme": "ppo",
+      "reference": "learned_response_online_map",
+      "public_weather_days": 32,
+      "actual_M_yuan": {
+        "delta": 512.3604926074861,
+        "low95": 166.82226771910854,
+        "high95": 857.8987174958636
+      },
+      "actual_S_yuan": {
+        "delta": -137.93569174485228,
+        "low95": -447.01171334268224,
+        "high95": 171.14032985297771
+      },
+      "actual_platform_gain_yuan": {
+        "delta": 409.8883940860079,
+        "low95": 133.45781417529895,
+        "high95": 686.3189739967169
+      }
+    },
+    {
+      "scheme": "ppo",
+      "reference": "ppo_same_weights_zero_explicit_history",
+      "public_weather_days": 32,
+      "actual_M_yuan": {
+        "delta": 49.837961000421274,
+        "low95": -221.03840310706363,
+        "high95": 320.7143251079062
+      },
+      "actual_S_yuan": {
+        "delta": 24.5328268947614,
+        "low95": -269.92783263746094,
+        "high95": 318.99348642698374
+      },
+      "actual_platform_gain_yuan": {
+        "delta": 39.870368800356914,
+        "low95": -176.83072248562456,
+        "high95": 256.5714600863384
+      }
+    },
+    {
+      "scheme": "ppo",
+      "reference": "no_history_ppo",
+      "public_weather_days": 32,
+      "actual_M_yuan": {
+        "delta": -79.43699162478401,
+        "low95": -422.6084394012192,
+        "high95": 263.73445615165116
+      },
+      "actual_S_yuan": {
+        "delta": 24.12555561224397,
+        "low95": -323.1856290321422,
+        "high95": 371.43674025663006
+      },
+      "actual_platform_gain_yuan": {
+        "delta": -63.549593299795276,
+        "low95": -338.08675152094634,
+        "high95": 210.98756492135578
+      }
+    }
+  ],
+  "same_cap_all": true,
+  "old_profit_floor_all": true,
+  "same_work_all": true,
+  "deadline_all": true,
+  "user_IR_all": true
+}

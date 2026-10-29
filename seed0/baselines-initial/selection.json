@@ -1,0 +1,106 @@
+{
+  "selection": "one fixed parameter per family maximizing training mean realised M; ties lower candidate index; raw exit excluded from its selected benchmark",
+  "selected": {
+    "raw": {
+      "parameters": {
+        "action": 17
+      },
+      "training_mean_M_yuan": 3763.6523215565,
+      "training_mean_profit_yuan": 3010.921857245178,
+      "training_mean_social_saving_yuan": 3993.197730855182,
+      "candidate_count": 61,
+      "selected_candidate_index": 17,
+      "queries": {
+        "day_case_rollouts": 7808,
+        "resolved_task_responses": 93696,
+        "actually_published_offers": 15772,
+        "accepted_offer_responses": 4668,
+        "unique_private_cases": 128,
+        "unique_public_days": 64
+      }
+    },
+    "matrix": {
+      "parameters": {
+        "template_index": 178,
+        "label": "regional_dayflat_r0_0.0050_r1_0.0025_r2_0.0025_quota_1.00",
+        "matrix": [
+          [
+            0.005,
+            0.005,
+            0.005,
+            0.005
+          ],
+          [
+            0.0025,
+            0.0025,
+            0.0025,
+            0.0025
+          ],
+          [
+            0.0025,
+            0.0025,
+            0.0025,
+            0.0025
+          ]
+        ],
+        "open": true
+      },
+      "training_mean_M_yuan": 4235.397757972488,
+      "training_mean_profit_yuan": 3388.3182063779805,
+      "training_mean_social_saving_yuan": 5575.467727386305,
+      "candidate_count": 204,
+      "selected_candidate_index": 178,
+      "queries": {
+        "day_case_rollouts": 26112,
+        "resolved_task_responses": 313344,
+        "actually_published_offers": 179294,
+        "accepted_offer_responses": 19008,
+        "unique_private_cases": 128,
+        "unique_public_days": 64
+      }
+    },
+    "value_share": {
+      "parameters": {
+        "rho": 0.3
+      },
+      "training_mean_M_yuan": 4226.38709703524,
+      "training_mean_profit_yuan": 3381.1096776281906,
+      "training_mean_social_saving_yuan": 5406.124456714237,
+      "candidate_count": 6,
+      "selected_candidate_index": 1,
+      "queries": {
+        "day_case_rollouts": 768,
+        "resolved_task_responses": 9216,
+        "actually_published_offers": 5367,
+        "accepted_offer_responses": 2304,
+        "unique_private_cases": 128,
+        "unique_public_days": 64
+      }
+    }
+  },
+  "calibration_queries": {
+    "day_case_rollouts": 128,
+    "resolved_task_responses": 1536,
+    "actually_published_offers": 1083,
+    "accepted_offer_responses": 235,
+    "unique_private_cases": 128,
+    "unique_public_days": 64
+  },
+  "calibration_fit_samples_by_owner": [
+    368,
+    364,
+    351
+  ],
+  "logit_scope": "Fit only actual public offered/replied records from random calibration. Refusals are probabilistic labels; no private preference bounds are inferred.",
+  "all_selection_queries": {
+    "day_case_rollouts": 34816,
+    "resolved_task_responses": 417792
+  },
+  "stage": "selection_complete",
+  "elapsed_seconds": 1366.3596655830042,
+  "train_case_count": 128,
+  "calibration_case_count": 128,
+  "users_path": "/Users/turbo/Documents/Codex/2026-10-28/levy-m-segev-i-tuisov-a/outputs/序贯合同协同/seed0/initial-users",
+  "legacy_path": "/Users/turbo/Documents/Codex/2026-10-28/levy-m-segev-i-tuisov-a/outputs/净收益分成与旧收益底线/legacy-seed0",
+  "test_cases_used": []
+}

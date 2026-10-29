@@ -1,0 +1,18 @@
+﻿cohort,scheme,S_mean_yuan,S_ci95_half_yuan,profit_mean_yuan,profit_ci95_half_yuan,weather_days,min_private_draws,max_private_draws,control_id,label,nondominated_observed_mean
+Initial frozen users,exit,0.0,0.0,0.0,0.0,32,4,4,A,Old contracts / no new offer,False
+Initial frozen users,strong_fixed_raw,3228.5374317990563,826.5927224288246,2423.20819782982,639.5722894570054,32,4,4,B,Train-selected fixed single offer,False
+Initial frozen users,strong_fixed_matrix_greedy_route,5205.975446644557,604.4709952127322,3170.2958954628984,474.53181583904137,32,4,4,C,Fixed rebate matrix + greedy routing,False
+Initial frozen users,strong_value_share_rule,4822.5340711725075,888.6235482618846,2984.6616846763786,559.001915695828,32,4,4,D,Resource-value compensation rule,False
+Initial frozen users,learned_response_prior,6274.794767214131,735.4754935443874,3641.868165516664,480.55348479767594,32,4,4,E,Logit response prior,True
+Initial frozen users,learned_response_online_map,6242.515562851278,731.9199713206773,3768.767837218525,504.95656831714183,32,4,4,F,Logit + online MAP,True
+Initial frozen users,ppo,6104.579871106427,669.8965089307223,4178.656231304532,497.4427408188072,32,4,4,G,PPO / full explicit history,True
+Initial frozen users,ppo_same_weights_zero_explicit_history,6080.047044211665,776.0459164530821,4138.785862504176,574.8689649513527,32,4,4,I,"PPO / same weights, history zeroed",False
+Initial frozen users,no_history_ppo,6080.454315494182,734.9858475991151,4242.205824604328,566.6121850178658,32,4,4,H,PPO / independently trained without history,True
+Joint-trained frozen users,exit,0.0,0.0,0.0,0.0,32,4,4,A,Old contracts / no new offer,False
+Joint-trained frozen users,strong_fixed_raw,3228.5374317990563,826.5927224288246,2423.20819782982,639.5722894570054,32,4,4,B,Train-selected fixed single offer,False
+Joint-trained frozen users,strong_fixed_matrix_greedy_route,5205.975446644557,604.4709952127322,3170.2958954628984,474.53181583904137,32,4,4,C,Fixed rebate matrix + greedy routing,False
+Joint-trained frozen users,strong_value_share_rule,4822.5340711725075,888.6235482618846,2984.6616846763786,559.001915695828,32,4,4,D,Resource-value compensation rule,False
+Joint-trained frozen users,learned_response_prior,6274.794767214131,735.4754935443874,3641.868165516664,480.55348479767594,32,4,4,E,Logit response prior,False
+Joint-trained frozen users,learned_response_online_map,6242.515562851278,731.9199713206773,3768.767837218525,504.95656831714183,32,4,4,F,Logit + online MAP,False
+Joint-trained frozen users,ppo,6275.293220420543,756.6782580748644,4366.245031424323,563.2994862337207,32,4,4,G,PPO / full explicit history,True
+Joint-trained frozen users,ppo_same_weights_zero_explicit_history,5033.787823023429,931.7731477596591,3545.2824738062336,669.6435501486745,32,4,4,I,"PPO / same weights, history zeroed",False

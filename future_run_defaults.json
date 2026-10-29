@@ -1,0 +1,8 @@
+{
+  "root_algorithm_seed": 0,
+  "default_joint_training_cycles": 1,
+  "requested": "以后就跑一轮就行",
+  "effective": "Future runs; completed archived run retains its actual four-cycle records.",
+  "continuation_rule": "Start with one joint update cycle; consider further cycles only when validation improves.",
+  "user_clarification": "联合训练是什么意思，如果很必要那就按照你的来"
+}
