@@ -22,6 +22,8 @@
 
 结果入口：[对比图](seed0/comparison.png)、[逐方案表](seed0/comparison.csv)、[配对结果](seed0/paired_comparison.csv)、[采样结果](seed0/sampled_test_summary.csv)、[中文结果](seed0/结果.txt)。
 
+已将旧固定单合同、固定价表、资源比例规则及历史消融补评到同一测试集，共15个确定性比较项：[全部方法](seed0/all_methods/比较结果.txt)、[完整CSV](seed0/all_methods/comparison.csv)。补评沿用已保存的训练集参数和模型，不重新训练或选参数。普通续训联合版在验证后保留联合前的平台检查点，因此与普通续训版数值相同。
+
 ## 目标与实现
 
 平台目标为：在至少保留参考策略95%的**平均增量现金利润**时，尽量减少全网发电排放。参考利润来自原联合版PPO在全部2048个训练样本上的确定性评估。该目标约束的是期望收益；原市场逐合同的资金约束、用户参与条件和每天的物理碳上限仍照常执行。
@@ -52,6 +54,7 @@ python source/scripts/carbon_offer_experiment.py --stage carbon
 python source/scripts/carbon_offer_experiment.py --stage test
 python source/scripts/summarize_carbon_offers.py
 python source/scripts/evaluate_carbon_sampling.py
+python source/scripts/compare_all_carbon_methods.py
 ```
 
 评价同时报告平台增量利润、真实系统成本节约、全网减排、数据中心分摊碳足迹和任务完成率。全网减排与数据中心分摊碳足迹分别计算，不相互替代。
